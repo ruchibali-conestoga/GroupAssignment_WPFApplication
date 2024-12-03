@@ -1,0 +1,26 @@
+﻿<Window x:Class="GroupAssignment_WPFApplication.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GroupAssignment_WPFApplication"
+        mc:Ignorable="d" Title="Vet Booking" Height="450" Width="800">
+    <Grid>
+        <Label Content="Pet Name:" HorizontalAlignment="Left" Margin="38,21,0,0" VerticalAlignment="Top" Width="123"/>
+        <TextBox Name="PetNameTextBox" Height="30" Margin="176,19,502,385" />
+        <Label Content="Owner Name:" HorizontalAlignment="Left" Margin="38,76,0,0" VerticalAlignment="Top" Width="101"/>
+        <TextBox HorizontalAlignment="Left" Margin="176,72,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="128" Height="30"/>
+        <Label Content="Appointment Time:" HorizontalAlignment="Left" Margin="38,135,0,0" VerticalAlignment="Top" Width="113"/>
+        <DatePicker HorizontalAlignment="Left" Margin="176,135,0,0" VerticalAlignment="Top" Width="128"/>
+        <ComboBox Name="AppointmentTimeComboBox" Margin="176,189,496,217">
+            <ComboBoxItem Content="08:00 AM" />
+            <ComboBoxItem Content="08:20 AM" />
+            <ComboBoxItem Content="08:40 AM" />
+            <ComboBoxItem Content="09:00 AM" />
+        </ComboBox>
+        <Button  Content="Book Appoinment" HorizontalAlignment="Left" Margin="176,258,0,0" 
+        VerticalAlignment="Top" Height="23" Width="128" Click="Button_Click" />
+        <Label Content="Appointment List:" HorizontalAlignment="Left" Margin="444,21,0,0" VerticalAlignment="Top" Width="113"/>
+        <ListBox Name="AppointmentsListBox" Margin="571,21,25,91" />
+    </Grid>
+</Window>
